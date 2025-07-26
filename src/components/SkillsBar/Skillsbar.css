@@ -1,0 +1,13 @@
+.skill-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 10px;
+}
+.skills-bar {
+  display: flex;
+  flex-wrap: wrap; /* or use nowrap if you don’t want wrapping */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}

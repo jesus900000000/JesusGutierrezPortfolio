@@ -1,0 +1,47 @@
+.main-contact-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* space between phone and icons */
+  flex-wrap: wrap; /* wrap on small screens */
+  padding: 1rem;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.Phone-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.phone-number {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* spacing between icons */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-logo:hover {
+  transform: scale(1.15);
+}

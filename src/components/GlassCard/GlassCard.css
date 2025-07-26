@@ -1,0 +1,18 @@
+.glass-card {
+  backdrop-filter: blur(70px); /* more blur */
+  -webkit-backdrop-filter: blur(70px); /* Safari support */
+  background: rgba(255, 255, 255, 0.12); /* slightly more visible for contrast */
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+  margin: 2rem auto; /* centers horizontally */
+  width: 90%;
+  max-width: 1000px;
+
+  /* center in viewport vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
