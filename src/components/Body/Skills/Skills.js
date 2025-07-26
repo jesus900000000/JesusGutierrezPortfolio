@@ -1,5 +1,5 @@
 import React from "react";
-import "./Skillsbar.css"; // Assuming you have a CSS file for styling
+import "./Skills.css"; // Assuming you have a CSS file for styling
 
 
 // Skills data

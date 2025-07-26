@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 2rem; /* space between phone and icons */
   flex-wrap: wrap; /* wrap on small screens */
-  padding: 1rem;
+  padding: 0rem;
 }
 
 .phone-container {
