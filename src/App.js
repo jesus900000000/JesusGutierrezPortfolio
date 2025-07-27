@@ -4,6 +4,8 @@ import Skills from './components/Body/Skills/Skills';
 import GlassCard from './components/GlassCard/GlassCard';
 import JesusGutierrezResume from './components/Body/JesusGutierrezResume/JesusGutierrezResume';
 import FancyTitle from './components/FancyTitle/FancyTitle';
+import Footer from './components/Footer/Footer';
+import Education from './components/Body/Education/Education';
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
         paddingTop: '-1rem'  // for navbar spacing
       }}>
 
-        <FancyTitle title="Skills" />
+
+        <FancyTitle title="Professional Skills and Experience" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
           <Skills />
         </GlassCard>
@@ -28,6 +31,11 @@ function App() {
           <h1>Welcome to My Portfolio</h1>
           <b><p>This is heavily under construction and is being worked on.</p></b>
           <b><p>Please feel free to contact me using the Contacts bar above! 😀</p></b>
+        </GlassCard>
+
+        <FancyTitle title="Education" />
+        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
+          <Education />
         </GlassCard>
 
         <FancyTitle title="Resume - Download using PDF icon Above" />
@@ -47,7 +55,16 @@ function App() {
           <b><p>Information about this website, domain, frontend, TLS integration, and more</p></b>
         </GlassCard>
       </div>
+
+      <Footer />
+
+
+
+
     </div>
+
+
+
   );
 }
 

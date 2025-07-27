@@ -1,8 +1,10 @@
 .skill-logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin: 0 10px;
+    width: 40px;
+    object-fit: contain;
+    margin: 0 10px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 .skills-bar {
   display: flex;
@@ -10,4 +12,10 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+
+.skill-name {
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
 }

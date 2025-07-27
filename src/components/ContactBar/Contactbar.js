@@ -1,6 +1,6 @@
 import React from "react";
-import "./Contactbar.css"; // Assuming you have a CSS file for styling
-import Resume from "../../JesusGutierrezResume.pdf"; // Adjust the path as necessary
+import "./Contactbar.css"; 
+
 
 const contactInfo = [
     {
@@ -21,7 +21,7 @@ const contactInfo = [
     {
         name: "Resume",
         logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-        url: {Resume},
+        url: "/JesusGutierrezResume.pdf",
         download: true,
     }
 ];
