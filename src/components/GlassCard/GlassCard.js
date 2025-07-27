@@ -11,8 +11,8 @@ export default function GlassCard({ children, style = {} }) {
     borderRadius: "20px",
     boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
     border: "1px solid rgba(255, 255, 255, 0.3)",
-    padding: "2rem",
-    margin: "2rem",
+    padding: "1.5rem",
+    margin: "1rem",
     width: "90%",
     maxWidth: "1000px",
     display: "flex",              // ✅ center horizontally/vertically

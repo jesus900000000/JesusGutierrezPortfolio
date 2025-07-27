@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contactbar.css"; // Assuming you have a CSS file for styling
+import Resume from "../../JesusGutierrezResume.pdf"; // Adjust the path as necessary
 
 const contactInfo = [
     {
@@ -17,6 +18,12 @@ const contactInfo = [
         logo: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
         url: "https://github.com/jesus900000000/JesusGutierrezPortfolio/blob/main/README.md"
     },
+    {
+        name: "Resume",
+        logo: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+        url: {Resume},
+        download: true,
+    }
 ];
 
 
@@ -38,7 +45,8 @@ export default function Contactbar() {
                 {contactInfo.map((contactInfoItem, index) => (
                     <div key={index} className="contact-item">
                         <a href={contactInfoItem.url} className="contact-link" target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer"
+                            download={contactInfoItem.download ? "JesusGutierrezSoftwareEngineerResume.pdf" : undefined}>
                             <div key={index} className="contact-item">
                                 <img src={contactInfoItem.logo} alt={`${contactInfoItem.name} logo`} className="contact-logo" />
                             </div>

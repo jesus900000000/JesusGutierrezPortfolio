@@ -1,18 +1,31 @@
-.glass-card {
-  backdrop-filter: blur(70px); /* more blur */
-  -webkit-backdrop-filter: blur(70px); /* Safari support */
-  background: rgba(255, 255, 255, 0.12); /* slightly more visible for contrast */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: .5px; /* Border thickness */
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 2rem;
-  margin: 2rem auto; /* centers horizontally */
-  width: 100%;
-  max-width: 900px;
+  background: linear-gradient(270deg, #ffffff46, #ffffff46, #ffffff46, #ffffff46);
+  background-size: 600% 600%;
+  animation: gradientBorder 15s ease infinite;
 
-  /* center in viewport vertically and horizontally */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: -1;
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
