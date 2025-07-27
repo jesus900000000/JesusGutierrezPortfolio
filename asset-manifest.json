@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.41bc972c.css",
-    "main.js": "/static/js/main.b12804a1.js",
+    "main.css": "/static/css/main.dc670376.css",
+    "main.js": "/static/js/main.4846ea90.js",
     "static/js/453.438d9e50.chunk.js": "/static/js/453.438d9e50.chunk.js",
+    "static/media/JesusGutierrezResume.pdf": "/static/media/JesusGutierrezResume.ec9ff39a4fb417743e1b.pdf",
+    "static/media/page2.png": "/static/media/page2.ab03cd115af8f7ae5377.png",
+    "static/media/page1.png": "/static/media/page1.200ad13f4a967d6706d4.png",
+    "static/media/page3.png": "/static/media/page3.f9a0b6a314f351f6b692.png",
     "index.html": "/index.html",
-    "main.41bc972c.css.map": "/static/css/main.41bc972c.css.map",
-    "main.b12804a1.js.map": "/static/js/main.b12804a1.js.map",
+    "main.dc670376.css.map": "/static/css/main.dc670376.css.map",
+    "main.4846ea90.js.map": "/static/js/main.4846ea90.js.map",
     "453.438d9e50.chunk.js.map": "/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41bc972c.css",
-    "static/js/main.b12804a1.js"
+    "static/css/main.dc670376.css",
+    "static/js/main.4846ea90.js"
   ]
 }
