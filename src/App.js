@@ -6,10 +6,37 @@ import JesusGutierrezResume from './components/Body/JesusGutierrezResume/JesusGu
 import FancyTitle from './components/FancyTitle/FancyTitle';
 import Footer from './components/Footer/Footer';
 import Education from './components/Body/Education/Education';
+import React, { useState, useEffect } from 'react';
+import GlassButton from './components/GlassButton/GlassButton';
+
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    const savedMode = localStorage.getItem('darkMode') === 'true';
+    setDarkMode(savedMode);
+    setIsReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (isReady) {
+      localStorage.setItem('darkMode', darkMode);
+    }
+  }, [darkMode, isReady]);
+
+  if (!isReady) return null; // Or a spinner if you want
+
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+
+      <GlassButton style={{marginTop:"1.5rem"}} onClick={() => setDarkMode(prev => !prev)}>
+        {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+      </GlassButton>
+
+
       <NavBar />
 
       <div style={{

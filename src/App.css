@@ -1,7 +1,7 @@
 body,
 html,
 #root,
-.App {
+.App.light-mode {
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -19,7 +19,7 @@ html,
 
 body {
   margin: 0;
-  padding-top: 213px;
+  padding-top: 164px;
   /* adjust if needed based on real navbar height */
 
 }
@@ -44,6 +44,55 @@ h1,
 h2,
 h3,
 .headline {
+  text-align: center;
+  margin: 1rem 0;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.App.dark-mode {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* background: black; */
+  background: linear-gradient(-45deg, #1e0a32, #0c2416, #050b14, #031814);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+
+  color: white;
+  text-align: center;
+
+}
+
+.App.dark-mode body {
+  margin: 0;
+  padding-top: 213px;
+  /* adjust if needed based on real navbar height */
+
+}
+
+/* Smooth animated flow */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Headings pop */
+.App.dark-mode h1,
+.App.dark-mode h2,
+.App.dark-mode h3,
+.App.dark-mode .headline {
   text-align: center;
   margin: 1rem 0;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);

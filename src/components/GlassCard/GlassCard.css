@@ -1,4 +1,5 @@
-.glass-card::before {
+
+.App.light-mode .glass-card::before{
   content: "";
   position: absolute;
   inset: 0;
@@ -15,7 +16,6 @@
   mask-composite: exclude;
 
   z-index: -1;
-}
 
 /* Keyframes for moving gradient */
 @keyframes gradientBorder {
@@ -28,4 +28,40 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+}
+
+
+.App.dark-mode .glass-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: .5px; /* Border thickness */
+  border-radius: 20px;
+  background: linear-gradient(270deg, #06a2df, #df06c9, #06a2df, #df06c9);
+  background-size: 600% 600%;
+  animation: gradientBorder 15s ease infinite;
+
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: -1;
+
+/* Keyframes for moving gradient */
+@keyframes gradientBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 }
