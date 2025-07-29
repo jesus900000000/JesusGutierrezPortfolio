@@ -43,7 +43,7 @@
   align-items: center;
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 
-  background: linear-gradient(-45deg, #1e0a32, #0c2416, #050b14, #031814);
+  background: linear-gradient(-45deg, #0e0518, #26285c, #0e0518, #26285c);
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
 

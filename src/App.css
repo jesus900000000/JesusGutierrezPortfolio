@@ -50,6 +50,9 @@ h3,
 }
 
 
+
+/*          THIS IS DARK MODE CODE BELOW        */
+
 .App.dark-mode {
   margin: 0;
   padding: 0;
@@ -57,7 +60,7 @@ h3,
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   /* background: black; */
-  background: linear-gradient(-45deg, #1e0a32, #0c2416, #050b14, #031814);
+  background: linear-gradient(-45deg, #0e0518, #26285c, #0e0518, #26285c);
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
 
