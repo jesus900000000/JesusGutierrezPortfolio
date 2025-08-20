@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import Education from './components/Body/Education/Education';
 import React, { useState, useEffect } from 'react';
 import GlassButton from './components/GlassButton/GlassButton';
+import HScrollableList from './components/HScrollableList/HScrollableList copy';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
     }
   }, [darkMode, isReady]);
 
-  if (!isReady) return null; // Or a spinner if you want
+  if (!isReady) return null; 
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
@@ -49,15 +50,15 @@ function App() {
       }}>
 
 
+        <GlassCard style={{ background: "rgba(58, 156, 236, 0.54)", color: "white" }}>
+          <h1>Welcome to My Portfolio</h1>
+          <b><p>Please feel free to contact me using the Contacts bar above! 😀</p></b>
+          <p>This website is constantly being updated. Stay tuned!</p>
+        </GlassCard>
+
         <FancyTitle title="Professional Skills and Experience" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
           <Skills />
-        </GlassCard>
-
-        <GlassCard style={{ background: "rgba(58, 156, 236, 0.54)", color: "white" }}>
-          <h1>Welcome to My Portfolio</h1>
-          <b><p>This is heavily under construction and is being worked on.</p></b>
-          <b><p>Please feel free to contact me using the Contacts bar above! 😀</p></b>
         </GlassCard>
 
         <FancyTitle title="Education" />
@@ -70,17 +71,11 @@ function App() {
           <JesusGutierrezResume />
         </GlassCard>
 
-        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
-          <b><p>Future Location of Sample work such as dupe websites, drone project information, and more</p></b>
+        <FancyTitle title="Some Works - more coming soon!" />
+        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white", }}>
+          <HScrollableList></HScrollableList>
         </GlassCard>
 
-        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
-          <b><p>Future Location of Professional Work Experience</p></b>
-        </GlassCard>
-
-        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
-          <b><p>Information about this website, domain, frontend, TLS integration, and more</p></b>
-        </GlassCard>
       </div>
 
       <Footer />
