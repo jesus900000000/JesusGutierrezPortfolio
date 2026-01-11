@@ -12,14 +12,13 @@ margin: 20px;
 .subtitle-div {
   font-size: 1.2em;
   font-weight: 500;
-  margin-bottom: 10px;
-  color: #ccc;
+  color: #ffffff;
   font-weight: bold;
 }
 
 .description-div {
   font-size: 1em;
   line-height: 1.5;
-  color: #ddd;
+  color: #d5d5d5;
   text-align: left;
 }

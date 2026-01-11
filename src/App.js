@@ -12,10 +12,27 @@ import HScrollableList from './components/HScrollableList/HScrollableList copy';
 import DropDown from './components/DropDown/DropDown';
 import VScrollableList from './components/VScrollableList/VScrollableList copy';
 
+
 function App() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [isReady, setIsReady] = useState(false);
+
+  const email = "jgutierrez9000@gmail.com";
+  const subject = encodeURIComponent("Portfolio Inquiry - Freelance Services Request");
+  const body = encodeURIComponent(
+    "Good day Jesus, \n\n" +
+    "I have taken a look at your portfolio and I would like to request your freelance services. My project details are as follows:\n\n" +
+    "Project Description:\n\n" +
+    "Scope of Work:\n\n" +  
+    "Timeline:\n\n" +
+    "Budget:\n\n" +
+    "Please let me know your availability and any additional information you may need. Looking forward to working with you!\n\n" +
+    "Best regards,\n[Your Name]"
+  );
+
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}&tf=1`;
+
 
   useEffect(() => {
     const savedMode = localStorage.getItem('darkMode') === 'true';
@@ -34,8 +51,6 @@ function App() {
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
 
-
-
       <NavBar />
 
       <div style={{
@@ -47,11 +62,35 @@ function App() {
         paddingTop: '-1rem'  // for navbar spacing
       }}>
 
+<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center',  paddingTop: '1.25rem', marginBottom: '-1.85rem' }}>
+  <GlassButton style={{ marginTop: "1.75rem" }} onClick={() => setDarkMode(prev => !prev)}>
+    <span style={{ margin: 0 }}>{darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}</span>
+  </GlassButton>
 
-          <GlassButton style={{ marginTop: "1.75rem" }} onClick={() => setDarkMode(prev => !prev)}>
-            {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
-          </GlassButton>
+  <a
+    href={gmailUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: "none" }} // keep it looking like a button
+  >
+    <GlassButton
+      style={{
+        marginTop: "1.75rem",
+        display: "flex",
+        alignItems: "center",
+        gap: "0.5rem"
+      }}
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+        alt="Freelance Request logo"
+        style={{ width: "20px", height: "20px" }}
+      />
+      <span>Freelance Request?</span>
 
+    </GlassButton>
+  </a>
+</div>
 
         <FancyTitle title="Professional Skills and Experience" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
@@ -73,15 +112,15 @@ function App() {
           <HScrollableList></HScrollableList>
         </GlassCard> */}
 
-        <FancyTitle title="Project Highlights" />
+        <FancyTitle title="Project Highlights (more in the works too!)" />
         <GlassCard style={{
           background: "rgba(55, 55, 255, 0.1)",
           color: "white",
 
-          display: "flex",           // force this card instance into flex
-          flexDirection: "column",   // vertical stacking
-          alignItems: "stretch",     // ⭐ makes children (dropdowns) expand full width
-          width: "100%",             // ensure card expands
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "stretch",
+          width: "100%",
         }}>
           <VScrollableList />
         </GlassCard>
