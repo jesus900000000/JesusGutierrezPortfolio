@@ -8,7 +8,7 @@ const skills = [
     {name: "React Native", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
     {name: "Meta Support Engineer", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg"},
     {name: "HCL Technologies Developer", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/HCL_Technologies_logo.svg"},
-    // {name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+    {name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
     // {name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
     // {name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"},
     // {name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"},

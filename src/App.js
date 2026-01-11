@@ -9,7 +9,8 @@ import Education from './components/Body/Education/Education';
 import React, { useState, useEffect } from 'react';
 import GlassButton from './components/GlassButton/GlassButton';
 import HScrollableList from './components/HScrollableList/HScrollableList copy';
-
+import DropDown from './components/DropDown/DropDown';
+import VScrollableList from './components/VScrollableList/VScrollableList copy';
 
 function App() {
 
@@ -28,14 +29,11 @@ function App() {
     }
   }, [darkMode, isReady]);
 
-  if (!isReady) return null; 
+  if (!isReady) return null;
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
 
-      <GlassButton style={{marginTop:"1.5rem"}} onClick={() => setDarkMode(prev => !prev)}>
-        {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
-      </GlassButton>
 
 
       <NavBar />
@@ -50,11 +48,10 @@ function App() {
       }}>
 
 
-        <GlassCard style={{ background: "rgba(58, 156, 236, 0.54)", color: "white" }}>
-          <h1>Welcome to My Portfolio</h1>
-          <b><p>Please feel free to contact me using the Contacts bar above! 😀</p></b>
-          <p>This website is constantly being updated. Stay tuned!</p>
-        </GlassCard>
+          <GlassButton style={{ marginTop: "1.75rem" }} onClick={() => setDarkMode(prev => !prev)}>
+            {darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+          </GlassButton>
+
 
         <FancyTitle title="Professional Skills and Experience" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
@@ -71,21 +68,32 @@ function App() {
           <JesusGutierrezResume />
         </GlassCard>
 
-        <FancyTitle title="Some Works - more coming soon!" />
-        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white", }}>
+        {/* <FancyTitle title="Some Works - more coming soon!" />
+        <GlassCard style={{ background: "rgba(32, 32, 42, 0.1)", color: "white", }}>
           <HScrollableList></HScrollableList>
+        </GlassCard> */}
+
+        <FancyTitle title="Project Highlights" />
+        <GlassCard style={{
+          background: "rgba(55, 55, 255, 0.1)",
+          color: "white",
+
+          display: "flex",           // force this card instance into flex
+          flexDirection: "column",   // vertical stacking
+          alignItems: "stretch",     // ⭐ makes children (dropdowns) expand full width
+          width: "100%",             // ensure card expands
+        }}>
+          <VScrollableList />
         </GlassCard>
+
+
 
       </div>
 
       <Footer />
 
 
-
-
     </div>
-
-
 
   );
 }
