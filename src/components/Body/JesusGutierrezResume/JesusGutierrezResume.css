@@ -1,80 +1,128 @@
+/* =============================== */
+/* CONTAINER */
+/* =============================== */
+
 .carousel-container {
   position: relative;
   width: 700px;
   height: 700px;
-  overflow: hidden;
+  overflow: visible; /* <-- important so arrows can overflow */
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100; /* strong */
 }
+
+/* =============================== */
+/* SLIDES */
+/* =============================== */
 
 .carousel-slide {
   position: absolute;
   width: 100%;
   height: 100%;
   animation: fade 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .carousel-slide.next {
   animation: slide-left 0.5s ease-in-out;
 }
+
 .carousel-slide.prev {
   animation: slide-right 0.5s ease-in-out;
 }
+
+/* =============================== */
+/* IMAGE */
+/* =============================== */
 
 .carousel-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 12px;
+  z-index: 1;
+  position: relative;
 }
+
+/* =============================== */
+/* BUTTONS (UPDATED) */
+/* =============================== */
 
 .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255,255,255,0.05);
   border: none;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  font-size: 2.25rem;
+  padding: 0.6rem 0.85rem;
   cursor: pointer;
-  z-index: 2;
   color: #ffffff;
   border-radius: 50%;
-  transition: background 0.2s ease;
+  transition: 0.2s ease;
+  z-index: 9999 !important; /* TOP OF EVERYTHING */
 }
 
 .carousel-button:hover {
-  background: rgba(255, 255, 255, 0.432);
+  background: rgba(255,255,255,0.35);
 }
 
 .carousel-button.left {
-  left: 10px;
+  left: -40px; /* spread out */
 }
 
 .carousel-button.right {
-  right: 10px;
+  right: -40px; /* spread out */
 }
 
+/* =============================== */
+/* MOBILE */
+/* =============================== */
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+    max-width: 420px;
+    max-height: 560px;
+    height: auto;
+    overflow: visible;
+    aspect-ratio: 8.5/11;
+    z-index: 100;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-button {
+    font-size: 2rem;
+    padding: 0.4rem 0.7rem;
+    z-index: 9999 !important;
+  }
+
+  .carousel-button.left {
+    left: -26px; /* mobile spread */
+  }
+
+  .carousel-button.right {
+    right: -26px; /* mobile spread */
+  }
+}
+
+/* =============================== */
+/* ANIMATIONS */
+/* =============================== */
+
 @keyframes slide-left {
-  from {
-    transform: translateX(100%);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
+  from { transform: translateX(100%); opacity: 0.5; }
+  to { transform: translateX(0%); opacity: 1; }
 }
 
 @keyframes slide-right {
-  from {
-    transform: translateX(-100%);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
+  from { transform: translateX(-100%); opacity: 0.5; }
+  to { transform: translateX(0%); opacity: 1; }
 }

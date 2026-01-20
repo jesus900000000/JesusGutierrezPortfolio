@@ -33,12 +33,19 @@ function App() {
 
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}&tf=1`;
 
+useEffect(() => {
+  const savedMode = localStorage.getItem('darkMode');
 
-  useEffect(() => {
-    const savedMode = localStorage.getItem('darkMode') === 'true';
-    setDarkMode(savedMode);
-    setIsReady(true);
-  }, []);
+  if (savedMode === null) {
+    setDarkMode(true);
+    localStorage.setItem('darkMode', 'true');
+  } else {
+    setDarkMode(savedMode === 'true');
+  }
+
+  setIsReady(true);
+}, []);
+
 
   useEffect(() => {
     if (isReady) {
@@ -49,7 +56,7 @@ function App() {
   if (!isReady) return null;
 
   return (
-    <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+    <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`} style={{ paddingTop: '12rem' }}>
 
       <NavBar />
 
@@ -62,7 +69,7 @@ function App() {
         paddingTop: '-1rem'  // for navbar spacing
       }}>
 
-<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center',  paddingTop: '1.25rem', marginBottom: '-1.85rem' }}>
+<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center',  paddingTop: '1.25rem', marginBottom: '-1.85rem' }} title="theButtons">
   <GlassButton style={{ marginTop: "1.75rem" }} onClick={() => setDarkMode(prev => !prev)}>
     <span style={{ margin: 0 }}>{darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}</span>
   </GlassButton>
@@ -92,7 +99,7 @@ function App() {
   </a>
 </div>
 
-        <FancyTitle title="Professional Skills and Experience" />
+        <FancyTitle title="Professional Expertise" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
           <Skills />
         </GlassCard>

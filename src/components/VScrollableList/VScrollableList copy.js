@@ -20,28 +20,77 @@ const projects = [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
             "https://www.svgrepo.com/show/424983/drone.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg",
-            "https://www.svgrepo.com/show/376559/lock-line.svg"
+            "https://assets.ubuntu.com/v1/a7e3c509-Canonical%20Ubuntu.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/OpenSSL_logo.svg/500px-OpenSSL_logo.svg.png?20200204215409"
         ]
     },
     {
-        name: "Airbnb Duplicate Website",
-        subtitle: "Functional Duplicate Website of Airbnb - utilizing ReactJS",
-        description: `• Re-implemented core UI/UX patterns of a modern rental marketplace using React and component-based architecture
-• Modeled property listings with structured props for pricing, ratings, categories, and media assets
-• Designed responsive layouts and front-end routing flows aligned with real-world product UX
-• Practiced product reverse-engineering to improve implementation reasoning and design fidelity
+        name: "CarAI - Personal Car Maintenance AI Assistant - In Development",
+        subtitle: "Personal AI assistant for Car Maintenance and Diagnostics while on the go",
+        description: `• I Identified an overlooked UX gap in automotive telemetry: real data exists, but consumers can’t access or interpret it in real-time.
+• Bridges gap between normal people and mechanics. Now anyone can maintain their car’s health using natural language.
+• Engineered a live OBD-II data pipeline using Bluetooth + Python + FastAPI to expose ECU signals for diagnostics and performance use.
+• Reduced complexity of automotive telemetry by abstracting protocol-level commands into clean, developer-friendly endpoints.
+• Strong demonstration of product thinking + system integration across hardware, embedded protocols, and full-stack data services.
 `,
-        photo: "/ProjectImages/airbnb.png",
-        width: "500px",
-        height: "250px",
-        codeLink: "https://github.com/jesus900000000/dupeofairbnb",
+        photo: "/ProjectImages/carai1.png",
+        width: "450px",
+        height: "450px",
+        codeLink: "",
         logos: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+            "https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png",
+            "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ollama-icon.png",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            "https://cdn.worldvectorlogo.com/logos/expo-go-app.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg",
+            "https://upload.wikimedia.org/wikipedia/commons/d/da/Bluetooth.svg"
+
+            
         ]
     },
+        {
+        name: "Gaming Tracker Desktop App - Releasing soon!",
+        subtitle: "Desktop Gaming Stats Tracker",
+        description: `• Designed and built a desktop companion app for surfacing player stats and metrics from a large global gaming ecosystem
+• Consumed and normalized REST API responses into structured data models for UI rendering and user workflows
+• Implemented local persistence + caching strategies to support offline usage and reduce redundant network fetches
+• Led full development lifecycle including data integration, UX flows, cross-platform packaging, and deployment on Linux/Windows
+`,
+        photo: "/ProjectImages/elec.jpg",
+        width: "575px",
+        height: "400px",
+        codeLink: "",
+        logos: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+        ]
+    },
+    {
+        name: "Custom Automated Bots for Discord Communities",
+        subtitle: "Discord Bots for Gaming Community Engagement",
+        description: `• Developed Discord bots using Node.js and Discord API to automate engagement workflows within gaming communities
+• Implemented message dispatching, simulated interactions, and event-trigger workflows to drive participation
+• Deployed bots with 24/7 uptime on Linux server infrastructure with persistent data storage
+• Owned full stack of development, deployment, and operational monitoring for multiple bot instances
+`,
+        photo: "/ProjectImages/yapper.png",
+        width: "250px",
+        height: "250px",
+        codeLink: "https://discord.com/users/164193891648536576",
+        logos: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+        ]
+    },
+
     {
         name: "Linux Server",
         subtitle: "Personal Linux Server - CasaOS and Ubuntu",
@@ -85,26 +134,6 @@ const projects = [
         ]
     },
     {
-        name: "Custom Discord Bots",
-        subtitle: "Discord Bots for Gaming Community Engagement",
-        description: `• Developed Discord bots using Node.js and Discord API to automate engagement workflows within gaming communities
-• Implemented message dispatching, simulated interactions, and event-trigger workflows to drive participation
-• Deployed bots with 24/7 uptime on Linux server infrastructure with persistent data storage
-• Owned full stack of development, deployment, and operational monitoring for multiple bot instances
-`,
-        photo: "/ProjectImages/yapper.png",
-        width: "250px",
-        height: "250px",
-        codeLink: "https://discord.com/users/164193891648536576",
-        logos: [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
-        ]
-    },
-    {
         name: "Custom Linux Gaming Server for a University Club",
         subtitle: "Running on custom Linux hardware on Ubuntu and CasaOS",
         description: `• Deployed and maintaining a Linux-based gaming server for a local university club with live multi-user concurrency
@@ -125,24 +154,24 @@ const projects = [
         ]
     },
     {
-        name: "Gaming Tracker Desktop App (React + Electron)",
-        subtitle: "Desktop Gaming Stats Tracker",
-        description: `• Designed and built a desktop companion app for surfacing player stats and metrics from a large global gaming ecosystem
-• Consumed and normalized REST API responses into structured data models for UI rendering and user workflows
-• Implemented local persistence + caching strategies to support offline usage and reduce redundant network fetches
-• Led full development lifecycle including data integration, UX flows, cross-platform packaging, and deployment on Linux/Windows
+        name: "Airbnb Duplicate Website",
+        subtitle: "Functional Duplicate Website of Airbnb - utilizing ReactJS",
+        description: `• Re-implemented core UI/UX patterns of a modern rental marketplace using React and component-based architecture
+• Modeled property listings with structured props for pricing, ratings, categories, and media assets
+• Designed responsive layouts and front-end routing flows aligned with real-world product UX
+• Practiced product reverse-engineering to improve implementation reasoning and design fidelity
 `,
-        photo: "/ProjectImages/elec.jpg",
-        width: "575px",
-        height: "400px",
-        codeLink: "",
+        photo: "/ProjectImages/airbnb.png",
+        width: "500px",
+        height: "250px",
+        codeLink: "https://github.com/jesus900000000/dupeofairbnb",
         logos: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
         ]
-    }
+    },
 ];
 
 export default function VScrollableList() {
