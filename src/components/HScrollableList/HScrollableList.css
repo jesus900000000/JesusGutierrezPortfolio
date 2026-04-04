@@ -1,0 +1,18 @@
+.h-scrollable-list-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,.18) transparent;
+    text-align: left;
+}
+
+.h-scrollable-list-div > * {
+  flex: 0 0 200px;   /* = flex-grow:0; flex-shrink:0; flex-basis:300px */
+  /* Meaning: don’t grow, don’t shrink, be 300px wide */
+  scroll-snap-align: start; /* optional: snap card to left edge while scrolling */
+}

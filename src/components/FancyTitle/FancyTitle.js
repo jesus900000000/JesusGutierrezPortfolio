@@ -2,13 +2,13 @@ import React from "react";
 
 export default function FancyTitle({ title }) {
     return (
-        <div style={{ position: 'relative' }}>
+        <div>
             <h2
                 style={{
                     position: 'relative',
-                    top: '25px',
+                    top:'25px',
                     fontFamily: 'Great Vibes',
-                    fontSize: '1rem',
+                    fontSize: '2rem',
                     fontWeight: 'bold',
                     color: 'white',
                     zIndex: 10,

@@ -1,0 +1,24 @@
+.dropdown-image {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-div{
+margin: 20px;
+}
+
+.subtitle-div {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.description-div {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #d5d5d5;
+  text-align: left;
+}

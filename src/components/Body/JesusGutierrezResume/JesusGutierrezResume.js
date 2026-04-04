@@ -3,9 +3,8 @@ import "./JesusGutierrezResume.css"; // Ensure you have the CSS file for styling
 
 import ResumePage1 from "../../../ResumeImages/page1.png";
 import ResumePage2 from "../../../ResumeImages/page2.png";
-import ResumePage3 from "../../../ResumeImages/page3.png";
 
-const resumePages = [ResumePage1, ResumePage2, ResumePage3];
+const resumePages = [ResumePage1, ResumePage2];
 
 export default function ResumeCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

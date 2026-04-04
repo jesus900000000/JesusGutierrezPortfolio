@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Jesus Gutierrez — Built using React 😊</p>
+      <p>© {new Date().getFullYear()} Built by Jesus Gutierrez using React 😊</p>
     </footer>
   );
 }
