@@ -8,14 +8,10 @@ import Footer from './components/Footer/Footer';
 import Education from './components/Body/Education/Education';
 import React, { useState, useEffect } from 'react';
 import GlassButton from './components/GlassButton/GlassButton';
-<<<<<<< HEAD
-import PDFViewer from './components/PDFViewer/PDFViewer';
-=======
 import HScrollableList from './components/HScrollableList/HScrollableList copy';
 import DropDown from './components/DropDown/DropDown';
 import VScrollableList from './components/VScrollableList/VScrollableList copy';
 
->>>>>>> 1aeaa5cac2aafff3ec17f1b945e52a77489f7ab9
 
 function App() {
 
@@ -119,11 +115,6 @@ useEffect(() => {
           <JesusGutierrezResume />
         </GlassCard>
 
-<<<<<<< HEAD
-        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
-          <PDFViewer pdfUrl= '/UAVDroneProtocolProject.pdf' />
-        </GlassCard>
-=======
         {/* <FancyTitle title="Some Works - more coming soon!" />
         <GlassCard style={{ background: "rgba(32, 32, 42, 0.1)", color: "white", }}>
           <HScrollableList></HScrollableList>
@@ -142,7 +133,6 @@ useEffect(() => {
           <VScrollableList />
         </GlassCard>
 
->>>>>>> 1aeaa5cac2aafff3ec17f1b945e52a77489f7ab9
 
 
       </div>
