@@ -19,7 +19,7 @@
 
 .App.light-mode .navbar-title {
   font-size: 2rem;
-  margin-bottom: -1rem;
+  margin-bottom: -.75rem;
   transition: font-size 0.3s ease;
 }
 
@@ -58,7 +58,7 @@
 
 .App.dark-mode .navbar-title {
   font-size: 2rem;
-  margin-bottom: -1rem;
+  margin-bottom: -.75rem;
   transition: font-size 0.3s ease;
 }
 

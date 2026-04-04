@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 import Education from './components/Body/Education/Education';
 import React, { useState, useEffect } from 'react';
 import GlassButton from './components/GlassButton/GlassButton';
-
+import PDFViewer from './components/PDFViewer/PDFViewer';
 
 function App() {
 
@@ -39,12 +39,13 @@ function App() {
 
       <NavBar />
 
+      {/* this div holds the glass cards */}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         gap: '0rem',
-        padding: '.5rem .5rem',
+        padding: '.5rem .5rem', //padding for cards on frontpage,  padding on top and width respectively
         paddingTop: '-1rem'  // for navbar spacing
       }}>
 
@@ -71,11 +72,7 @@ function App() {
         </GlassCard>
 
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
-          <b><p>Future Location of Sample work such as dupe websites, drone project information, and more</p></b>
-        </GlassCard>
-
-        <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
-          <b><p>Future Location of Professional Work Experience</p></b>
+          <PDFViewer pdfUrl= '/UAVDroneProtocolProject.pdf' />
         </GlassCard>
 
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
