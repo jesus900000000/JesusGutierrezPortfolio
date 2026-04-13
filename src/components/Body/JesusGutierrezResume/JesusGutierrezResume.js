@@ -1,40 +1,18 @@
-import React, { useState } from "react";
-import "./JesusGutierrezResume.css"; // Ensure you have the CSS file for styling
+import React from "react";
+import "./JesusGutierrezResume.css";
 
 import ResumePage1 from "../../../ResumeImages/page1.png";
-import ResumePage2 from "../../../ResumeImages/page2.png";
 
-const resumePages = [ResumePage1, ResumePage2];
-
-export default function ResumeCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState("next");
-
-  const nextSlide = () => {
-    setDirection("next");
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % resumePages.length);
-  };
-
-  const prevSlide = () => {
-    setDirection("prev");
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + resumePages.length) % resumePages.length
-    );
-  };
-
+export default function Resume() {
   return (
-    <div className="carousel-container">
-      <button onClick={prevSlide} className="carousel-button left">←</button>
-
-      <div className={`carousel-slide ${direction}`}>
+    <div className="resume-container">
+      <a href="/JesusGutierrezResume.pdf" download>
         <img
-          src={resumePages[currentIndex]}
-          alt={`Resume page ${currentIndex + 1}`}
-          className="carousel-image"
+          src={ResumePage1}
+          alt="Resume"
+          className="resume-image"
         />
-      </div>
-
-      <button onClick={nextSlide} className="carousel-button right">→</button>
+      </a>
     </div>
   );
 }

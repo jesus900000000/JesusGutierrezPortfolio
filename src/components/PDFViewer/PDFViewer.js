@@ -27,13 +27,13 @@ export default function PDFViewer({ pdfUrl }) {
 
             <div className="flex items-center space-x-4 mt-4">
                 <button onClick={() => setPageNumber(p => Math.max(p - 1, 1))} disabled={pageNumber <= 1}>
-                    ⬅ Prev
+                     ‹ Prev
                 </button>
                 <span>
                     Page {pageNumber} of {numPages}
                 </span>
                 <button onClick={() => setPageNumber(p => Math.min(p + 1, numPages))} disabled={pageNumber >= numPages}>
-                    Next ➡
+                    Next ›
                 </button>
             </div>
         </div>

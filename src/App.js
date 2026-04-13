@@ -11,6 +11,7 @@ import GlassButton from './components/GlassButton/GlassButton';
 import HScrollableList from './components/HScrollableList/HScrollableList copy';
 import DropDown from './components/DropDown/DropDown';
 import VScrollableList from './components/VScrollableList/VScrollableList copy';
+import FeaturedProjects from './components/FeaturedProjects/FeaturedProjects';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     "Good day Jesus, \n\n" +
     "I have taken a look at your portfolio and I would like to request your freelance services. My project details are as follows:\n\n" +
     "Project Description:\n\n" +
-    "Scope of Work:\n\n" +  
+    "Scope of Work:\n\n" +
     "Timeline:\n\n" +
     "Budget:\n\n" +
     "Please let me know your availability and any additional information you may need. Looking forward to working with you!\n\n" +
@@ -33,18 +34,18 @@ function App() {
 
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}&tf=1`;
 
-useEffect(() => {
-  const savedMode = localStorage.getItem('darkMode');
+  useEffect(() => {
+    const savedMode = localStorage.getItem('darkMode');
 
-  if (savedMode === null) {
-    setDarkMode(true);
-    localStorage.setItem('darkMode', 'true');
-  } else {
-    setDarkMode(savedMode === 'true');
-  }
+    if (savedMode === null) {
+      setDarkMode(true);
+      localStorage.setItem('darkMode', 'true');
+    } else {
+      setDarkMode(savedMode === 'true');
+    }
 
-  setIsReady(true);
-}, []);
+    setIsReady(true);
+  }, []);
 
 
   useEffect(() => {
@@ -70,35 +71,35 @@ useEffect(() => {
         paddingTop: '-1rem'  // for navbar spacing
       }}>
 
-<div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center',  paddingTop: '1.25rem', marginBottom: '-1.85rem' }} title="theButtons">
-  <GlassButton style={{ marginTop: "1.75rem" }} onClick={() => setDarkMode(prev => !prev)}>
-    <span style={{ margin: 0 }}>{darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}</span>
-  </GlassButton>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', paddingTop: '1.25rem', marginBottom: '-1.85rem' }} title="theButtons">
+          <GlassButton style={{ marginTop: "1.75rem" }} onClick={() => setDarkMode(prev => !prev)}>
+            <span style={{ margin: 0 }}>{darkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}</span>
+          </GlassButton>
 
-  <a
-    href={gmailUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{ textDecoration: "none" }} // keep it looking like a button
-  >
-    <GlassButton
-      style={{
-        marginTop: "1.75rem",
-        display: "flex",
-        alignItems: "center",
-        gap: "0.5rem"
-      }}
-    >
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
-        alt="Freelance Request logo"
-        style={{ width: "20px", height: "20px" }}
-      />
-      <span>Freelance Request?</span>
+          <a
+            href={gmailUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }} // keep it looking like a button
+          >
+            <GlassButton
+              style={{
+                marginTop: "1.75rem",
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem"
+              }}
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+                alt="Freelance Request logo"
+                style={{ width: "20px", height: "20px" }}
+              />
+              <span>Freelance Request?</span>
 
-    </GlassButton>
-  </a>
-</div>
+            </GlassButton>
+          </a>
+        </div>
 
         <FancyTitle title="Professional Expertise" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
@@ -110,7 +111,7 @@ useEffect(() => {
           <Education />
         </GlassCard>
 
-        <FancyTitle title="Resume - Download using PDF icon Above" />
+        <FancyTitle title="Resume" />
         <GlassCard style={{ background: "rgba(55, 55, 255, 0.1)", color: "white" }}>
           <JesusGutierrezResume />
         </GlassCard>
@@ -120,7 +121,16 @@ useEffect(() => {
           <HScrollableList></HScrollableList>
         </GlassCard> */}
 
-        <FancyTitle title="Project Highlights (more in the works too!)" />
+        <FancyTitle title="Project Highlights" />
+        <h3 style={{
+          position: 'relative',
+          fontFamily: 'Great Vibes',
+          fontSize: '1.5rem',
+          fontWeight: 'bold',
+          color: 'white',
+          zIndex: 10,
+          background: 'rgba(0, 0, 0, 0)',
+        }}>More in the works!</h3>
         <GlassCard style={{
           background: "rgba(55, 55, 255, 0.1)",
           color: "white",
@@ -130,7 +140,7 @@ useEffect(() => {
           alignItems: "stretch",
           width: "100%",
         }}>
-          <VScrollableList />
+          <FeaturedProjects />
         </GlassCard>
 
 

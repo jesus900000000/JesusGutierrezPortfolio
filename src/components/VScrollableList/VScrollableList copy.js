@@ -92,24 +92,22 @@ const projects = [
     },
 
     {
-        name: "Linux Server",
-        subtitle: "Personal Linux Server - CasaOS and Ubuntu",
-        description: `• Deployed and operated a Linux server environment for hosting personal software services and development workloads
-• Utilized Docker + CasaOS for container orchestration, service discovery, and persistent storage management
-• Configured Cloudflare routing for secure remote access, network isolation, and domain-level protection
-• Managed operational concerns including uptime, service deployment, resource monitoring, and update workflows
+        name: "DevOps and Multi Service Linux Server",
+        subtitle: "Personal Linux Server for Hosting Software Services and Development Workloads",
+        description: `• Running multiple containerized services for development, media, and CI/CD workloads
+• Grafana + Prometheus monitoring stack for real-time resource usage and performance insights across services
+• Hosting a variety of services including code repositories, media servers, custom web applications, and community services, using Docker and CasaOS
+• Network configuration and security management using Cloudflare tunnels, firewalls, and encrypted communications to ensure secure remote access and operations
 `,
-        photo: "/ProjectImages/casaos.png",
+        photo: "/ProjectImages/grafana.png",
         width: "500px",
         height: "250px",
         codeLink: "",
         logos: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-            "https://www.svgrepo.com/show/376559/lock-line.svg",
-            "https://www.svgrepo.com/show/489281/api.svg",
-            "https://assets.ubuntu.com/v1/a7e3c509-Canonical%20Ubuntu.svg",
-            "https://wiki.casaos.io/_assets/casaos_logo_hd.svg"
+            "https://cdn.worldvectorlogo.com/logos/grafana.svg",
+            "https://cdn.worldvectorlogo.com/logos/prometheus.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
         ]
     },
     {
@@ -151,25 +149,6 @@ const projects = [
             "https://cdn.iconscout.com/icon/free/png-256/java-60-1174953.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/2048px-Bash_Logo_Colored.svg.png",
             "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cloudflare-color.png"
-        ]
-    },
-    {
-        name: "Airbnb Duplicate Website",
-        subtitle: "Functional Duplicate Website of Airbnb - utilizing ReactJS",
-        description: `• Re-implemented core UI/UX patterns of a modern rental marketplace using React and component-based architecture
-• Modeled property listings with structured props for pricing, ratings, categories, and media assets
-• Designed responsive layouts and front-end routing flows aligned with real-world product UX
-• Practiced product reverse-engineering to improve implementation reasoning and design fidelity
-`,
-        photo: "/ProjectImages/airbnb.png",
-        width: "500px",
-        height: "250px",
-        codeLink: "https://github.com/jesus900000000/dupeofairbnb",
-        logos: [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
         ]
     },
 ];

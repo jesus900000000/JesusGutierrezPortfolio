@@ -34,6 +34,10 @@ const skills = [
     {name: "Ubuntu", logo: "https://assets.ubuntu.com/v1/a7e3c509-Canonical%20Ubuntu.svg"},
     {name: "CasaOS", logo: "https://wiki.casaos.io/_assets/casaos_logo_hd.svg"},
     {name: "Atlassian Jira", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"},
+    {name: "Grafana", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"},
+    {name: "Kubernetes", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"},
+    {name: "Prometheus", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"},
+    {name: "CI/CD", logo: "https://www.svgrepo.com/show/489281/api.svg"},   
 ];
 
 
